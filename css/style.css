@@ -5,10 +5,55 @@
 }
 
 .maincontainer{
-    background-color: navy;
     width: 100%;
     height: 500px;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-color: navy;
+}
+
+.firstelement{
+    display: none;
+}
+
+.max-200{
+    width: 150px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.max-400{
+    display: none;
+
+    width: 150px;
+    margin-bottom: 15px;
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: white;
+}
+
+@media screen and (min-width: 201px){
+    .firstelement{
+        display: flex;
+    }
+
+    .max-200{
+        display: none;
+    }
+
+    .maincontainer{
+        flex-direction: column;
+    }
+
+    .max-400{
+        display: flex;
+    }
 }
